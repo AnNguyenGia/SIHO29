@@ -1,0 +1,9 @@
+langchain
+langchain-deepseek
+python-dotenv
+requests
+langchain_tavily
+google-api-python-client 
+google-auth-oauthlib 
+google-auth-httplib2
+
