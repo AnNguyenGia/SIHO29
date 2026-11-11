@@ -8,3 +8,6 @@ google-auth-oauthlib
 google-auth-httplib2
 langchain-google-community[calendar] 
 langchain-openai
+streamlit[auth]>=1.67,<2
+httpx>=0.27,<1
+pydantic>=2,<3

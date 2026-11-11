@@ -6,9 +6,10 @@ from langchain_tavily import TavilySearch
 
 load_dotenv()
 class NewAgent:
-    def __int__(self):
+    
+    def __init__(self):
         self.news_agent = create_agent(
-            model=ChatDeepSeek(model="deepseek-chat", temperature=3),
+            model=ChatDeepSeek(model="deepseek-chat", temperature=0),
             tools=[TavilySearch(
                 topic="news",
                 time_range="week",
@@ -26,6 +27,8 @@ class NewAgent:
             ),
         )
 
+        print("already :)")
+
     def forward(self, location):
         result = self.news_agent.invoke({
             "messages": [{
@@ -35,3 +38,4 @@ class NewAgent:
         })
 
         return result["messages"][-1].content
+
