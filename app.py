@@ -1,2 +1,4 @@
 import streamlit
-from agents import new_agent, weather_agent
+from agents.weather_agent import WeatherAgent
+from agents.calendar_agent import CalendarAgent
+from agents.new_agent import NewAgent

@@ -6,4 +6,5 @@ langchain_tavily
 google-api-python-client 
 google-auth-oauthlib 
 google-auth-httplib2
-
+langchain-google-community[calendar] 
+langchain-openai

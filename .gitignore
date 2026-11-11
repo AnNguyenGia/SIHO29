@@ -1,2 +1,10 @@
 .env
+.env*
+!.env.example
+agents/credentials.json
+agents/token.json
 .vscode/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
